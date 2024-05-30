@@ -1,8 +1,8 @@
 # 🚀Solidity from Basics
 
-## Introduction
+## Introduction🔥
 
-Welcome to the Solidity from Basics course! In this series of lectures, we'll walk you through the fundamentals of Solidity, the programming language used for developing smart contracts on the Ethereum blockchain. Let's dive in!
+➡️Welcome to the Solidity from Basics course! In this series of lectures, we'll walk you through the fundamentals of Solidity, the programming language used for developing smart contracts on the Ethereum blockchain. Let's dive in!
 
 ## Lecture 0: Remix IDE
 
@@ -32,7 +32,7 @@ Welcome to the Solidity from Basics course! In this series of lectures, we'll wa
 - Ensure the compiler version matches the one specified in your Solidity file.
 - Successful compilation results in bytecode generation.
 
-## Lecture 1: Solidity Types
+## Lecture 1: Solidity Types🔥
 
 ### Elementary Types
 - Solidity supports various elementary types such as Boolean, Unsigned Integer, Integer, Address, and Bytes.
@@ -57,13 +57,13 @@ contract SimpleStorage {
     bytes32 favoriteBytes32 = "cat";
 }
 ```
-## Lecture 2: Solidity Function
+## Lecture 2: Solidity Function🔥
 ### Building the store function
 
 - 📋 To store this variable, we need to implement a new function. In Solidity, functions - or methods, are portions of code designed to execute specific tasks within the overall codebase. We'll call this new function store, and it will be responsible for updating the favoriteNumber variable.
 - Functions are identified by the keyword function, followed by a name (e.g. store) and any additional parameters enclosed in rounded parentheses (). These parameters represent the values sent to our function. In this case, we inform the store function that we want to update favoriteNumber with some other value _favoriteNumber:
   
-![Remix IDE](function.png)
+➡️![Remix IDE](function.png)
 - Visibility
 In Solidity, functions and variables can have one of these four visibility specifiers:
 public
@@ -82,14 +82,14 @@ function retrieve() public pure returns(uint256){
     return 7;
 }
 ```
-## Lecture 3: Solidity Array and Struct
+## Lecture 3: Solidity Array and Struct🔥
 ### Arrays:
 - Arrays in Solidity are collections of elements of the same data type. They can be dynamic (length can change during execution) or fixed-size (length is fixed at compile time).
 ```
 uint256[] dynamicArray; // Dynamic array declaration
 uint256[3] fixedArray; //Fixed array declaration
 ```
-![Remix IDE](array_struct.png)
+➡️![Remix IDE](array_struct.png)
 - Purpose of memory: Solidity variables can be stored either in memory, storage, or stack. Here, using memory indicates that the values of _name and _favouriteNumber will be stored temporarily during the execution of the function. Once the function execution is completed, these variables will be cleared from memory.
 ### Struct:
 - Structs in Solidity allow you to define custom data types with multiple fields.
