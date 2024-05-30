@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favouriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfPeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favouriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/Struct_Array.sol": "Struct_Array"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/Struct_Array.sol": {
+			"keccak256": "0xbca61f532d4b078eac4f74b80c6ffe115f26774d65bc9a2223f18eed657a9543",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be05fe5656cbf666d24a2766562974c0ebd057865805c3dabe15639bbac54502",
+				"dweb:/ipfs/QmUG48mVnq4GzbBmkndUfJabyyN76xreZYRFnvHfeLNWgJ"
+			]
+		}
+	},
+	"version": 1
+}
