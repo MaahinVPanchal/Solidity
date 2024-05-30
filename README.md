@@ -1,4 +1,4 @@
-# Solidity from Basics
+# 🚀Solidity from Basics
 
 ## Introduction
 
@@ -55,6 +55,31 @@ contract SimpleStorage {
     int256 favoriteInt = -88;
     address myAddress = 0xaB1B7206AA6840C795aB7A6AE8b15417b7E63a8d;
     bytes32 favoriteBytes32 = "cat";
+}
+```
+## Lecture 2: Solidity Function
+### Building the store function
+
+- 📋 To store this variable, we need to implement a new function. In Solidity, functions - or methods, are portions of code designed to execute specific tasks within the overall codebase. We'll call this new function store, and it will be responsible for updating the favoriteNumber variable.
+- Functions are identified by the keyword function, followed by a name (e.g. store) and any additional parameters enclosed in rounded parentheses (). These parameters represent the values sent to our function. In this case, we inform the store function that we want to update favoriteNumber with some other value _favoriteNumber:
+  
+![Remix IDE](function.png)
+- Visibility
+In Solidity, functions and variables can have one of these four visibility specifiers:
+public
+private
+external (only for functions)
+internal
+
+### Pure and View keywords
+The terms view and pure are used when a function reads values from the blockchain without altering its state. Such functions will not initiate transactions but rather make calls, represented as blue buttons in the Remix interface. A pure function will prohibit any reading from the state or storage.
+```
+function retrieve() public view returns(uint256){
+    return favoriteNumber;
+}
+
+function retrieve() public pure returns(uint256){
+    return 7;
 }
 ```
 ## Lecture 3: Solidity Array and Struct
